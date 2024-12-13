@@ -1,15 +1,16 @@
 # NBsTem local
-[NBsTem Webserver](http://www.nbscal.online/)
+- You can [NBsTem Webserver](http://www.nbscal.online/)
 
-Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for :red[nanobody] thermostability prediction, as described in [NBsTem Webserver](http://www.nbscal.online/) and [NBsTem paper](http://www.nbscal.online/).
+- Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem Webserver](http://www.nbscal.online/) and [NBsTem paper](http://www.nbscal.online/).
 
-Since the nanobody Tm prediction task, NBsTem Webserver deployed the [AntiBERTy+CNN] model. Therefore, the source code of running the NBsTem_Tm[ProtT5+CNN] model is provided here.
+- Since the nanobody Tm prediction task, NBsTem Webserver deployed the [AntiBERTy+CNN] model.
+- Therefore, we provide the source code of running the NBsTem_Tm[ProtT5+CNN] model here.
 
 ## 1.Setup
 
 Clone this repository and install the package locally:
 ```bash
-$ git clone git@github.com:jeffreyruffolo/AntiBERTy.git
+$ git clone git@github.com:jourmore/NBsTem.git
 $ cd NBsTem_local
 $ pip install -r requirements.txt
 ```
@@ -17,12 +18,17 @@ $ pip install -r requirements.txt
 ## 2.Usage
 
 ```bash
+python app.py -i in.fasta
+python app.py -t QVQLVESGGGSVQAGGSLRLSCAASGYTVSTYCMGWFRQAPGKEREGVATILGGSTYYGDSVKGRFTISQDNAKNTVYLQMNSLKPEDTAIYYCAGSTVASTGWCSRLRPYDYHYRGQGTQVTVSS
+```
+
+```bash
 *usage: python app.py [-h] [-i I] [-o O] [-t T] [-seed SEED] [-device DEVICE]
 
 optional arguments:
   -h, --help      show this help message and exit
   -i I            Input path with fasta format. [Such as: ./in.fasta]
-  -o O            Output file name when input is fasta format. [Default: "NBsTem_year_month_day.csv"
+  -o O            Output file name when input is fasta format. [Default: "Output-NBsTem-[Year]-[Month]-[Day].csv"
   -t T            Input one sequecne with text format. [Default:
                   QVQLVESGGGSVQAGGSLRLSCAASGYTVSTYCMGWFRQAPGKEREGVATILGGSTYYGDSVKGRFTISQDNAKNTVYLQMNSLKPEDTAIYYCAGSTVASTGWCSRLRPYDYHYRGQGTQVTVSS]
   -seed SEED      Random seed for torch, numpy, os. [Default: 42]
