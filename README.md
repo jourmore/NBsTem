@@ -1,8 +1,7 @@
 # NBsTem local
+
+- Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem paper](http://www.nbscal.online/).
 - You can also access [NBsTem Webserver](http://www.nbscal.online/) for more.
-
-- Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem Webserver](http://www.nbscal.online/) and [NBsTem paper](http://www.nbscal.online/).
-
 - Since the nanobody Tm prediction task, NBsTem Webserver deployed the [AntiBERTy+CNN] model.
 - Therefore, we provide the source code of running the NBsTem_Tm[ProtT5+CNN] model here.
 
