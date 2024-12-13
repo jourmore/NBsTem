@@ -1,5 +1,5 @@
 # NBsTem local
-- You can [NBsTem Webserver](http://www.nbscal.online/)
+- You can also access [NBsTem Webserver](http://www.nbscal.online/) for more.
 
 - Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem Webserver](http://www.nbscal.online/) and [NBsTem paper](http://www.nbscal.online/).
 
@@ -74,9 +74,9 @@ python app.py
 
 ### 3.About models
 
-- #### **NBsTem_Tm**: To use [ProtT5_XL_UniRef50](https://huggingface.co/Rostlab/prot_t5_xl_uniref50) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
+- **NBsTem_Tm**: To use [ProtT5_XL_UniRef50](https://huggingface.co/Rostlab/prot_t5_xl_uniref50) to generate sequence embeddings, and CNN deep learning framework to training model.
 
-- #### **NBsTem_Q**: To use [AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
+- **NBsTem_Q**: To use [AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
 
 ## Citing this work
 
