@@ -1,7 +1,9 @@
 # NBsTem local
-Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem Webserver](http://www.nbscal.online/) and [NBsTem paper](http://www.nbscal.online/).
+[NBsTem Webserver](http://www.nbscal.online/)
 
-###  For the nanoantibody Tm prediction task, [NBsTem Webserver](http://www.nbscal.online/) deployed the [AntiBERTy+CNN] model. Therefore, the source code of running the NBsTem_Tm[ProtT5+CNN] model is provided here.
+Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for :red[nanobody] thermostability prediction, as described in [NBsTem Webserver](http://www.nbscal.online/) and [NBsTem paper](http://www.nbscal.online/).
+
+Since the nanobody Tm prediction task, NBsTem Webserver deployed the [AntiBERTy+CNN] model. Therefore, the source code of running the NBsTem_Tm[ProtT5+CNN] model is provided here.
 
 ## 1.Setup
 
@@ -15,7 +17,7 @@ $ pip install -r requirements.txt
 ## 2.Usage
 
 ```bash
-usage: python app.py [-h] [-i I] [-o O] [-t T] [-seed SEED] [-device DEVICE]
+*usage: python app.py [-h] [-i I] [-o O] [-t T] [-seed SEED] [-device DEVICE]
 
 optional arguments:
   -h, --help      show this help message and exit
@@ -29,7 +31,7 @@ optional arguments:
 
 ### Example
 
-- Built-in example:
+- Example (Using default parameters and example sequences):
 
 ```bash
 python app.py
@@ -64,19 +66,17 @@ python app.py
 ...
 ```
 
-### 3.About NBsTem models
+### 3.About models
 
-#### **NBsTem_Tm**
-To use [ProtT5_XL_UniRef50](https://huggingface.co/Rostlab/prot_t5_xl_uniref50) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
+- #### **NBsTem_Tm**: To use [ProtT5_XL_UniRef50](https://huggingface.co/Rostlab/prot_t5_xl_uniref50) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
 
-#### **NBsTem_Q**
-To use [AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
+- #### **NBsTem_Q**: To use [AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
 
 ## Citing this work
 
 ```bibtex
 @article{...,
-    title = {NBsTem: An online webserver for ...},
+    title = {NBsTem: ...},
     author = {Jourmore...},
     journal = {...},
     year= {2024}
