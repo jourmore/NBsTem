@@ -82,7 +82,7 @@ python app.py
 
 - **NBsTem_Tm**: The melting temperature (Tm) from experiments (nanoDSF, DSF, DSC and CD, etc.).
 
-- **NBsTem_Q**: A new theoretical indicator proposed by us is derived from Q-values of molecular dynamics (MD) trajectories (Qclass).
+- **NBsTem_Q**: A new theoretical indicator (Qclass) proposed by us is derived from Q-values of molecular dynamics trajectories.
 
 ## Citing this work
 
