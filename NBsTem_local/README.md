@@ -1,4 +1,4 @@
-# NBsTem local
+# NBsTem Standalone
 
 - Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem paper](http://www.nbscal.online/).
 - You can also access [NBsTem Webserver](http://www.nbscal.online/) for nanobody thermostability prediction online.
