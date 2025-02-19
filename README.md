@@ -1,9 +1,7 @@
 # NBsTem local
 
 - Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem paper](http://www.nbscal.online/).
-- You can also access [NBsTem Webserver](http://www.nbscal.online/) for more.
-- Since the nanobody Tm prediction task, NBsTem Webserver deployed the [AntiBERTy+CNN] model.
-- Therefore, we provide the source code of running the NBsTem_Tm[ProtT5+CNN] model here.
+- You can also access [NBsTem Webserver](http://www.nbscal.online/) for nanobody thermostability prediction online.
 
 ## 1.Setup
 
@@ -47,35 +45,44 @@ python app.py
 ```bash
 ******************************************************************
 **                                                              **
-**  NBsTem v.2024 Thermostability prediction for Nanobody/VHH.  **
+**  NBsTem v.2025 Thermostability prediction for Nanobody/VHH.  **
 **                                                              **
 **                  http://www.nbscal.online/                   **
 **                    maojun@stu.scu.edu.cn                     **
 ******************************************************************
 
-*./Rostlab/prot_t5_xl_uniref50 exists, and it will be automatically loaded.
-
 == 1.Use seed: 42
 == 2.Device: cuda
-== 3.Loading antibody language model: AntiBERTy + MS-ResLSTM
-== 4.Loading protein language model: ProtT5_XL_UniRef50 + CNN
+== 3.Loading antibody language model: AntiBERTy
 == 5.Begin to predict: Tm, Qclass, Specie and Chain
 ** Calculating Specie and Chain [Fast]
-** Calculating Tm:: 100%|█████████████████████| 1/1 [00:01<00:00,  1.48s/it]
-** Calculating Qclass:: 100%|█████████████████| 1/1 [00:00<00:00,  2.54it/s]
-== 6.Finish ! The results are shown below or you can check file [NBsTem-2024-12-13.csv]
+** Calculating Tm:: 100%|██████████████████████████████████████
+** Calculating Qclass:: 100%|██████████████████████████████████
+== 6.Finish ! The results are shown below or you can check file [Tm1.csv]
 
-         ID     Tm Qclass Specie                                           Sequence
-1  Nanobody  67.32      4  Camel  QVQLVESGGGSVQAGGSLRLSCAASGYTVSTYCMGWFRQAPGKERE...
-2  Nanobody  67.32      4  Camel  QVQLVESGGGSVQAGGSLRLSCAASGYTVSTYCMGWFRQAPGKERE...
-...
+           ID         Tm Qclass Specie                                           Sequence
+1        seq1  53.900002      3  Camel  GGGGLVQAGGSLRLSCAASGRTFYNYAMGWFRQAPGKEREFVAAIS...
+2        seq2  56.130001      3  Camel  GGGGLVQAGGSLRLSCAASGRTLYNYAMGWFRQAPGKEREFVAAIS...
+3        seq3  55.759998      3  Camel  GGGGLVQAGGSLRLSCAASGPTFYNYAMGWFRQAPGKEREFVAAIS...
+4        seq4  55.709999      3  Camel  GGGLVQAGGSLRLSCAASGPTFYNYAMGWFRQAPGKEREFVAAISW...
+5        seq5  75.879997      4  Camel  RSQFVESGGGLVQPGGSLRLSCTASGFSLKYWAVGWFRQAPGKERE...
+...       ...        ...    ...    ...                                                ...
+4996  seq4996  71.300003      3  Camel  EVQLVESGGDLVQPGGSLRLSCAASGSIFSINDMGWFRQAPGKQRE...
+4997  seq4997  53.419998      3  Camel  QVQLQESGGGLVQAGGSLRLSCAASGRTFSSHAMAWFRQGPGEERQ...
+4998  seq4998  72.000000      1  Camel  EVQLQESGGGLVQAGGSLRLSCAASGRTFSIYTIGWFRQAPGKERE...
+4999  seq4999  67.970001      4  Camel  QVQLQESGGGSVQDGGSLTLSCAASSSYVFNNLNMGWFRQAPGKEC...
+5000  seq5000  62.330002      3  Camel  QVKLEESGGGSAQTGGSLRLTCAASGRTSRSYGMGWFRQAPGKERE...
+
+[5000 rows x 5 columns]
 ```
 
 ### 3.About models
 
-- **NBsTem_Tm**: To use [ProtT5_XL_UniRef50](https://huggingface.co/Rostlab/prot_t5_xl_uniref50) to generate sequence embeddings, and CNN deep learning framework to training model.
+- A general framework, consisting of two core components: (1) Sequence Encoding Module: Leveraging the advanced antibody language model AntiBERTy to generate sequence representations. (2) Downstream Training Module: Implementing MS-ResLSTM – a novel fusion architecture integrating a multi-scale residual network (MS-ResNet) with bidirectional long short-term memory (Bi-LSTM) as the computational unit.
 
-- **NBsTem_Q**: To use [AntiBERTy](https://github.com/jeffreyruffolo/AntiBERTy) to generate sequence embeddings, and MS-ResLSTM deep learning framework to training model.
+- **NBsTem_Tm**: The melting temperature (Tm) from experiments (nanoDSF, DSF, DSC and CD, etc.).
+
+- **NBsTem_Q**: A new theoretical indicator proposed by us is derived from Q-values of molecular dynamics (MD) trajectories (Qclass).
 
 ## Citing this work
 
