@@ -88,9 +88,9 @@ python app.py
 
 ```bibtex
 @article{...,
-    title = {NBsTem: ...},
-    author = {Jourmore...},
-    journal = {...},
-    year= {2024}
+    title = {NBsTem: Complementary dual models inferred from experimental and theoretical indicators to realize reliable prediction for nanobody thermostability},
+    author = {Jourmore, ..., Xuemei-Pu},
+    journal = {Under submission},
+    year= {2025}
 }
 ```
