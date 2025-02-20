@@ -78,8 +78,6 @@ python app.py
 
 ### 3.About models
 
-- A general framework, consisting of two core components: (1) Sequence Encoding Module: Leveraging the advanced antibody language model AntiBERTy to generate sequence representations. (2) Downstream Training Module: Implementing MS-ResLSTM – a novel fusion architecture integrating a multi-scale residual network (MS-ResNet) with bidirectional long short-term memory (Bi-LSTM) as the computational unit.
-
 - **NBsTem_Tm**: The melting temperature (Tm) from experiments (nanoDSF, DSF, DSC and CD, etc.).
 
 - **NBsTem_Q**: A new theoretical indicator (Qclass) proposed by us is derived from Q-values of molecular dynamics trajectories.
