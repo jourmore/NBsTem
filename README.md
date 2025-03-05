@@ -4,7 +4,7 @@
 - You can also access [NBsTem Webserver](http://www.nbscal.online/) for nanobody thermostability prediction online.
 
 <p align="center">
-    <img align="center" src="[https://github.com/jourmore/jourmore/blob/main/md.png](https://github.com/jourmore/NBsTem/blob/master/GA.png)" width="500" alt="logo"/>
+    <img align="center" src="[TOC](https://github.com/jourmore/NBsTem/blob/master/GA.png)" alt="logo"/>
 </p>
 
 ## 1.Setup
