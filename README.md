@@ -59,8 +59,8 @@ python app.py
 == 3.Loading antibody language model: AntiBERTy
 == 5.Begin to predict: Tm, Qclass, Specie and Chain
 ** Calculating Specie and Chain [Fast]
-** Calculating Tm:: 100%|████████████████████████████████████████████████████████████████████| 83/83 [00:03<00:00, 22.40it/s]
-** Calculating Qclass:: 100%|████████████████████████████████████████████████████████████████| 83/83 [00:02<00:00, 33.12it/s]
+** Calculating Tm:: 100%|█████████████████████████████████████████████████| 83/83 [00:03<00:00, 22.40it/s]
+** Calculating Qclass:: 100%|█████████████████████████████████████████████| 83/83 [00:02<00:00, 33.12it/s]
 == 6.Finish ! The results are shown below or you can check file [Tm83.csv]
 
                     ID         Tm Qclass Specie                                           Sequence
@@ -81,9 +81,9 @@ python app.py
 
 ### 3.About models
 
-- **NBsTem_Tm**: The melting temperature (Tm) from experiments (nanoDSF, DSF, DSC and CD, etc.).
+- **NBsTem_Tm**: A model for predicting the melting temperature (Tm) from experiments (nanoDSF, DSF, DSC and CD, etc.).
 
-- **NBsTem_Q**: A new theoretical indicator (Qclass) proposed by us is derived from Q-values of molecular dynamics trajectories.
+- **NBsTem_Q**: A model for predicting a new theoretical indicator (Qclass) proposed by us, which is derived from molecular dynamics simulation.
 
 ## Citing this work
 
