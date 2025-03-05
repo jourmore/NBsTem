@@ -3,8 +3,8 @@
     <img align="center" src="https://github.com/jourmore/NBsTem/blob/master/GA.png" width="500" alt="logo"/>
 </p>
 
-- Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem paper](http://www.nbscal.online/).
-- You can also access [NBsTem Webserver](http://www.nbscal.online/) for nanobody thermostability prediction online.
+- This is the official repository of NBsTem_Tm & NBsTem_Q, two deep learning models designed for thermostability prediction of nanobodies (VHH).
+- You can also access [NBsTem Webserver](http://www.nbscal.online/) for thermostability prediction online.
 
 ## 1.Setup
 
