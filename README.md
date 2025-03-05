@@ -1,6 +1,6 @@
 # NBsTem Standalone
 <p align="center">
-    <img align="center" src="https://github.com/jourmore/NBsTem/blob/master/GA.png" alt="logo"/>
+    <img align="center" src="https://github.com/jourmore/NBsTem/blob/master/GA.png" width="500" alt="logo"/>
 </p>
 
 - Official repository for NBsTem (NBsTem_Tm & NBsTem_Q), deep learning models for nanobody thermostability prediction, as described in [NBsTem paper](http://www.nbscal.online/).
