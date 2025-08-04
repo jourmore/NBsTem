@@ -1,4 +1,5 @@
 # NBsTem Standalone
+## "Conformation Dynamics Informed Dual-Scale Deep Learning for Reliable Nanobody Thermostability Prediction."
 <p align="center">
     <img align="center" src="https://github.com/jourmore/NBsTem/blob/master/GA.png" width="500" alt="logo"/>
 </p>
@@ -79,7 +80,7 @@ python app.py
 [83 rows x 5 columns]
 ```
 
-### 3.About models
+## 3.About models
 
 - **NBsTem_Tm**: A model for predicting the melting temperature (Tm) from experiments (nanoDSF, DSF, DSC and CD, etc.).
 
@@ -89,7 +90,7 @@ python app.py
 
 ```bibtex
 @article{...,
-    title = {NBsTem: Complementary dual models inferred from experimental and theoretical indicators to realize reliable prediction for nanobody thermostability},
+    title = {Conformation Dynamics Informed Dual-Scale Deep Learning for Reliable Nanobody Thermostability Prediction.},
     author = {Jourmore, ..., Xuemei-Pu},
     journal = {Under submission},
     year= {2025}
