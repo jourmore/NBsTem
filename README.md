@@ -1,5 +1,5 @@
 # NBsTem Standalone
-## "Conformation Dynamics Informed Dual-Scale Deep Learning for Reliable Nanobody Thermostability Prediction."
+## Paper: "Conformation Dynamics Informed Dual-Scale Deep Learning for Reliable Nanobody Thermostability Prediction." [_Link_](http://www.nbscal.online/)
 <p align="center">
     <img align="center" src="https://github.com/jourmore/NBsTem/blob/master/GA.png" width="500" alt="logo"/>
 </p>
